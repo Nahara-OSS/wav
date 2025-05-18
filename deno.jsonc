@@ -1,0 +1,21 @@
+{
+    "name": "@nahara/wav",
+    "version": "1.0.0",
+    "fmt": {
+        "indentWidth": 4,
+        "lineWidth": 120
+    },
+    "publish": {
+        "exclude": [".github/", ".vscode/"]
+    },
+    "compilerOptions": {
+        "lib": [
+            "dom",
+            "deno.ns"
+        ]
+    },
+    "exports": {
+        ".": "./mod.ts",
+        "./riff": "./riff/mod.ts"
+    }
+}
