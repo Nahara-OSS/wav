@@ -1,7 +1,7 @@
 /**
  * The RIFF file header (`RIFF`).
  */
-export const riff = new Uint8Array([0x52, 0x49, 0x46, 0x46]);
+export const riff: Uint8Array = new Uint8Array([0x52, 0x49, 0x46, 0x46]);
 
 /**
  * Represent RIFF file.
