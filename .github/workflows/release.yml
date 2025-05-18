@@ -1,19 +1,15 @@
-name: Publish
+name: Release
 on:
-  push:
-    branches:
-      - main
+  release: 
+    types: [created]
 
 jobs:
   publish:
     runs-on: ubuntu-latest
-
     permissions:
       contents: read
       id-token: write
-
     steps:
       - uses: actions/checkout@v4
-
-      - name: Publish package
+      - name: Publish to jsr
         run: npx jsr publish
